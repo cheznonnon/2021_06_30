@@ -1,0 +1,142 @@
+
+
+----------==========----------==========----------==========----------
+
+
+"Eat Your Own Catfood."
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2021/06/30
+
+
+BUGFIX
+
+
+	win32/win_txtbox/12_line.c
+		n_win_txtbox_line() : when last page : when deleted
+			OLD : do nothing
+			NEW : fixed
+	win32/win_txtbox/24_subclass.c
+		SendMessage()
+			OLD : call twice in some cases
+			NEW : fixed
+
+	Marie
+		Grab N Drag
+			OLD : last one step is insufficient
+			NEW : fixed
+	Nonnon Paint
+		Multi-Layer : layer window : selection
+			OLD : grayed frequently
+			NEW : fixed
+		Draw Engine : initial redraw count
+			OLD : twice in some cases
+			NEW : fixed
+		Multi-Layer : save
+			OLD : not saved when not exist
+			NEW : fixed
+			[!] : internal cache causes
+	Project Checker
+		TxtBox : when last page : double-clicked : selection
+			OLD : misbehave
+			NEW : fixed
+			[x] : n_win_txtbox_line() causes
+
+
+NEW_FEATURE
+
+
+	neutral/png.c
+		n_png_uncompress_engine()
+			NEW : separated from n_png_uncompress()
+			[!] : for future multi-thread scalability
+
+	win32/gdi/effect.c
+		n_gdi_bmp_alpha_enhancer() : parameter
+			OLD : 0.50
+			NEW : 0.33
+			[!] : more readable than older
+	win32/gdi/gdi.c
+		N_GDI_BASE_PROGRESS_*
+			NEW : percent available
+			[!] : default is 0% : usage is changed
+
+	Nonnon Paint
+		Resizer
+			NEW : busy cursor available
+		Load : multi-layer
+			NEW : faster by faster in many cores
+		Save : multi-layer
+			NEW : faster by faster in many cores
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2021/06/20
+
+
+BUGFIX
+
+
+	win32/win_simplemenu.c
+		check box : render position
+			OLD : not accurate in some environment
+			NEW : fixed
+
+	Nonnon Freecell
+		menu : rearrange
+			OLD : using hard-coded value
+			NEW : fixed
+	Nonnon Spider
+		menu : current mode
+			OLD : not checked
+			NEW : fixed
+	OrangeCat
+		Item View : DnD : when a folder is empty
+			OLD : not refreshed
+			NEW : fixed
+	Project Checker
+		complete mode : menu
+			OLD : not checked
+			NEW : fixed
+
+
+NEW_FEATURE
+
+
+	nmidi
+		theme
+			NEW : matte black available
+	Nonnon Paint
+		when an image is dropped
+			NEW : busy cursor available
+			[!] : for heavy process
+		when an image is dropped : multi-layer
+			NEW : progress bar available
+			[!] : for heavy process
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2021/06/10
+
+
+zzz...
+
+
+----------==========----------==========----------==========----------
+
