@@ -12,6 +12,29 @@
 Change Log
 
 
+2021/06/30 #1 : 2021/07/08
+
+
+BUGFIX
+
+
+	CatPad
+		source code
+			OLD : missing
+			NEW : fixed
+	Neko no Te
+		UI : file types
+			OLD : you can not select when extension is set
+			NEW : fixed
+
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
 2021/06/30
 
 
